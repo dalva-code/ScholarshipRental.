@@ -28,12 +28,14 @@ Admin can cancel a grant at any time, resetting applicant’s state.
 All actions emit events for blockchain tracking: application, approval, rent payment.
 
 📖 Contract Summary
-🔧 Function Name	📋 Description
-applyForScholarship(...)	Allows a user to apply by submitting their name, ID, and landlord address.
-approveApplicant(address)	Admin-only: Approves an applicant and starts the scholarship period.
-simulateMonthlyPayment(...)	Admin-only: Emits a simulated rent payment to the landlord if still valid.
-cancelScholarship(address)	Admin-only: Cancels the grant for a given applicant.
-viewApplicant(address)	Returns all stored data for an applicant.
+
+| 🔧 Function Name                | 📋 Description                                                                 |
+|-------------------------------|--------------------------------------------------------------------------------|
+| applyForScholarship(...)      | Allows a user to apply by submitting their name, ID, and landlord address.     |
+| approveApplicant(address)     | Admin-only: Approves an applicant and starts the scholarship period.           |
+| simulateMonthlyPayment(...)   | Admin-only: Emits a simulated rent payment to the landlord if still valid.     |
+| cancelScholarship(address)    | Admin-only: Cancels the grant for a given applicant.                           |
+| viewApplicant(address)        | Returns all stored data for an applicant.                                      |
 
 
 ⚙️ Prerequisites
